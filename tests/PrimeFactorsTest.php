@@ -114,7 +114,7 @@ class PrimeFactorsTest extends TestCase
 
         $result = $this->primeFactors->calculate(30);
 
-        self::assertEquals($expectedList, $result);
+        self::assertEqualsCanonicalizing($expectedList, $result);
     }
 
 }
